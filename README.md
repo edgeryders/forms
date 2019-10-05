@@ -7,7 +7,8 @@ For the time being forms are stored in a single JSON file - in this instance /da
 An example form, using this template:
 
 ```
-title: 'Festival Ticket',
+festival_ticket: {
+	title: 'Festival Ticket',
     slug: 'festival_ticket',
     id: 'registration',
     description: 'Sign up to the Edgeryders Festival, November 19-29th 2019!',
@@ -64,7 +65,7 @@ title: 'Festival Ticket',
         id: 'confirm',
         text: "That's it! Click submit and keep a lookout for festival events happening in our locations or host one yourself! There are also events happening in Brussels, Warsaw, Stockholm and Berlin where you participate."
       },
-    },
+}
 ```
 
 ## Project setup
