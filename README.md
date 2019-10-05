@@ -8,7 +8,7 @@ An example form, using this template:
 
 ```
 festival_ticket: {
-	title: 'Festival Ticket',
+    title: 'Festival Ticket',
     slug: 'festival_ticket',
     id: 'registration',
     description: 'Sign up to the Edgeryders Festival, November 19-29th 2019!',
