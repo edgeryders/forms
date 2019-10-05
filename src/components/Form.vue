@@ -165,7 +165,6 @@ export default {
       },
       response: null,
       questionnaire: null,
-      currentQuestionIndex: 0,
       exit: false,
       submitAnswers: false,
       answered: [],
