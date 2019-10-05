@@ -184,7 +184,45 @@ export default {
   methods: {
     submitForm() {
       this.submitAnswers = true;
-      console.log(this.questionnaire)
+      const formdata = {
+        records: [
+          {
+            fields: {
+              Name: this.questionnaire.name,
+              Email: this.questionnaire.email,
+              Languages: this.questionnaire.languages,
+              City: this.questionnaire.city,
+              Biography: this.questionnaire.bio
+            }
+          }
+        ]
+      };
+
+      let airtable =
+        "https://api.airtable.com/v0/appSsObHW2QODf3jA/" + this.data.id;
+
+      let axiosConfig = {
+        headers: {
+          Authorization: "Bearer keyocggSHfh6E9gSg",
+          "Content-Type": "application/json"
+        }
+      };
+      var self = this;
+
+      axios
+        .post(airtable, formdata, axiosConfig)
+        .then(function(response) {
+          // handle success
+          console.log("success");
+
+          setTimeout(function() {
+            self.close();
+          }, 2000);
+        })
+        .catch(function(error) {
+          // handle error
+          console.log(error);
+        });
     },
     answer(questionId) {
       this.questionnaire[questionId] = this.response;
