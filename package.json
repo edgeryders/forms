@@ -12,7 +12,7 @@
     "markdown-it": "^11.0.0",
     "moment": "^2.27.0",
     "node-forge": "^0.9.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "parameterize": "1.0.0",
     "sass-loader": "^8.0.0",
     "secure-random-string": "^1.1.2",
